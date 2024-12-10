@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montserrat Typeface</title>
+    <link rel="stylesheet" href="style45.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+    <script src="java.script.js"></script>
+</head>
+<body>
+    <header class="bouncing-header">
+        <h1>(づ ᴗ _ᴗ)づ Welcome to My Page</h1>
+    </header>
+
+    <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </label>
+        <div class="menu-container">
+            <div class="right-side">
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#experience">My Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </nav>
+    <div class="mainpage">
+        <input type="checkbox" id="toggle" class="toggle">
+        <label for="toggle" class="MONTSERRAT text--bulge" data-scroll="in" data-splitting="">
+            <span class="char">M</span>
+            <span class="char">O</span>
+            <span class="char">N</span>
+            <span class="char">T</span>
+            <span class="char">S</span>
+            <span class="char">E</span>
+            <span class="char">R</span>
+            <span class="char">R</span>
+            <span class="char">A</span>
+            <span class="char">T</span>
+        </label>
+    </div>
+
+    <div class="info-section content">
+        <div class="highlight">
+            <script src="java.script.js"></script>
+            <h1 class="title">Learn about Montserrat Typeface ᕙ( •̀ ᗜ •́ )ᕗ</h1>
+            <section>
+                <p>Montserrat is a geometric sans-serif typeface designed by Julieta Ulanovsky in 2011.
+                    It was inspired by the old posters and signs in the Montserrat neighborhood of Buenos Aires, Argentina.
+                    The typeface is widely used for its clean lines and modern aesthetic.</p>
+                <p>It's commonly used for both digital and print media, including websites, 
+                    branding, and advertising. Its clear and legible design makes it 
+                    a favorite for headlines and body text alike.</p>
+            </section>
+        </div>
+    
+
+        <div class="image">
+            <img src="julieta copy.png" alt="Julieta Ulanovsky" class="image-1">
+            <div class="image-overlay">
+                <div class="image-title">Julieta Ulanovsky</div>
+                <div class="image-description">Is an Argentine graphic and typeface designer based in Buenos Aires.
+                    Her work on Montserrat has made it a popular choice among
+                    web designers and has contributed to its widespread use on websites across the world.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info-section" id="why-loved">
+        <section class="lovedesign">
+            <div>
+                <h1>Why Montserrat Typeface is loved by designers? ⸜(｡˃ ᵕ ˂ )⸝♡</h1>
+                <div class="animated-text">
+                    <div></div>It's <span></span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="weights">
+        <div class="elparra">
+            <h1>Font Variations</h1>
+            <h2>18 variables including Italic versions for each weight</h2>
+        </div>
+        <div style="font-family: 'Montserrat'; font-weight: 900;">Julieta Ulanovsky</div>
+        <div style="font-family: 'Montserrat'; font-weight: 800;">Julieta Ulanovsky</div>
+        <div style="font-family: 'Montserrat'; font-weight: 700;">Julieta Ulanovsky</div>
+        <div style="font-family: 'Montserrat'; font-weight: 600;">Julieta Ulanovsky</div>
+        <div style="font-family: 'Montserrat'; font-weight: 500;">Julieta Ulanovsky</div>
+        <div style="font-family: 'Montserrat'; font-weight: 400;">Julieta Ulanovsky</div>
+        <div style="font-family: 'Montserrat'; font-weight: 300;">Julieta Ulanovsky</div>
+        <div style="font-family: 'Montserrat'; font-weight: 200;">Julieta Ulanovsky</div>
+        <div style="font-family: 'Montserrat'; font-weight: 100;">Julieta Ulanovsky</div>
+    </div>
+    <div class="titulo">
+        <h1>Play with the SIZE</h1><h1>     
+        <h1>(°ロ°) !</h1>
+        <div class="slider-container">
+            <div class="slider-label">Font Size</div>
+            <input id="size-slider" type="range" min="10" max="95" value="80"/>
+        </div>
+        <div class="slider-container">
+            <div class="slider-label">Font Weight</div>
+            <input id="weight-slider" type="range" min="100" max="900" step="100" value="400"/>
+        </div>
+
+        <div class="paragraph1" id="paragraph">
+            Montserrat is one of the oldest neighborhoods in Buenos Aires, Argentina. 
+            It was named after the Parroquia de Nuestra Señora de Montserrat (Parish of Our Lady of Montserrat), 
+            which was built in 1769.
+        </div>
+      
+           <script>
+               const paragraphElement = document.getElementById('paragraph');
+               const sizeSlider = document.getElementById('size-slider');
+               const weightSlider = document.getElementById('weight-slider');
+      
+               sizeSlider.addEventListener('input', () => {
+                   paragraphElement.style.fontSize = sizeSlider.value + 'px';
+               });
+      
+               weightSlider.addEventListener('input', () => {
+                   paragraphElement.style.fontWeight = weightSlider.value;
+               });
+           </script>
+    
+
+
+    <div id="hachi-container" class="hachi">
+        <div id="hachi">
+            <h1 data-tooltip="large x-height/short-descenders">Lazy</h1>
+            <h1 data-tooltip="Geometric sans-serif/ Uniform Strokes">hachita</h1>
+        </div>
+    </div>
+
+   </div>   
+        
+   <div class="alfabeto">
+    
+    <div id="alfabetoletras">
+        <h1>ALPHABET AND MORE  </h1></div>
+       <div class="letter-box"><span>A</span></div>
+       <div class="letter-box"><span>B</span></div>
+       <div class="letter-box"><span>C</span></div>
+      <div class="letter-box"><span>D</span></div>
+      <div class="letter-box"><span>E</span></div>
+       <div class="letter-box"><span>F</span></div>
+       <div class="letter-box"><span>G</span></div>
+      <div class="letter-box"><span>H</span></div>
+      <div class="letter-box"><span>I</span></div>
+      <div class="letter-box"><span>J</span></div>
+      <div class="letter-box"><span>K</span></div>
+     <div class="letter-box"><span>L</span></div>
+     <div class="letter-box"><span>M</span></div>
+      <div class="letter-box"><span>N</span></div>
+      <div class="letter-box"><span>O</span></div>
+     <div class="letter-box"><span>P</span></div>
+       <div class="letter-box"><span>Q</span></div>
+       <div class="letter-box"><span>R</span></div>
+      <div class="letter-box"><span>S</span></div>
+      <div class="letter-box"><span>T</span></div>
+      <div class="letter-box"><span>U</span></div>
+      <div class="letter-box"><span>V</span></div>
+     <div class="letter-box"><span>W</span></div>
+     <div class="letter-box"><span>X</span></div>
+      <div class="letter-box"><span>Y</span></div>
+      <div class="letter-box"><span>Z</span></div>
+       <!-- Add more letters as needed -->
+      
+
+    <div class="latin">
+    <h1> SPECIAL CHARACTERS</h1>
+    <p> <span>ª</span>
+        <span>ᵃ</span>
+        <span>ǲ</span>
+        <span>ǅ</span>
+        <span>ᵉ</span>
+        <span>ᵋ</span>
+        <span>ʰ</span>
+        <span>ᶤ</span>
+        <span>ǈ</span>
+        <span>ᴺ</span>
+        <span>ǋ</span>
+        <span>º</span>
+        <span>ᵒ</span>
+        <span>ᵓ</span>
+        <span>ᵘ</span>
+        <span>ᶶ</span>
+        <span>ᵛ</span>
+        <span>ʷ</span>
+        <span>ʸ</span>
+        <span>ᶻ</span>
+        <span>ʔ</span>
+        <span>ǀ</span>
+        <span>ǁ</span>
+        <span>ǂ</span>
+        <span>ǃ</span>
+        <span>꞉</span>
+        <span>꞊</span></p>
+    </div>
+    <div class="numbers">
+    <h1> NUMBERS</h1>
+    <p>  <span>0</span>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span> </p>
+    </div>
+
+    <div class="puntuation">
+    <h1> PUNTUATION </h1>
+    <p> <span>/</span>
+        <span>_</span>
+        <span>-</span>
+        <span>–</span>
+        <span>—</span>
+        <span>,</span>
+        <span>:</span>
+        <span>:</span>
+        <span>!</span>
+        <span>¡</span>
+        <span>?</span>
+        <span>¿</span>
+        <span>.</span>
+        <span>...</span>
+        <span>·</span>
+        <span>'</span>
+        <span>‘</span>
+        <span>’</span>
+        <span>‹</span>
+        <span>›</span>
+        <span>"</span>
+        <span>“</span>
+        <span>”</span>
+        <span>„</span>
+        <span>«</span>
+        <span>»</span>
+        <span>(</span>
+        <span>)</span>
+        <span>[</span>
+        <span>]</span>
+        <span>{</span>
+        <span>}</span>
+        <span>§</span>
+        <span>¶</span>
+        <span>@</span>
+        <span>*</span>
+        <span>?</span>
+        <span>/</span>
+        <span>\</span>
+        <span>&</span>
+        <span>#</span>
+        <span>%</span></p>
+</div>
+</div>
+
+
+<div class="sobre">
+    <section id="about">
+       <input type="checkbox" id="about-toggle" class="toggle">
+       <label for="about-toggle"><h2>About Me ( ͡° ͜ʖ ͡°)</h2></label>
+       <p class="hidden">I'm a Graphic Design student from Rutgers University Newark, junior year. This is my first time doing coding and I hope you like my type specimen coding project. Also, I'm from Ecuador and I love dogs.</p>
+    </section>
+ 
+    <section id="experience">
+       <input type="checkbox" id="experience-toggle" class="toggle">
+       <label for="experience-toggle"><h2>My Experience ᕦ(ò_óˇ)ᕤ</h2></label>
+       <p class="hidden">My experience doing coding was very stressful but I kind of like it when everything works as I want. I had learned a lot in this class and I want to thank the professor for all the help :V.</p>
+    </section>
+ 
+    <section id="contact">
+        <a href="https://www.instagram.com/mela.y_y" class="instagram-link"></a>
+       <input type="checkbox" id="contact-toggle" class="toggle">
+       <label for="contact-toggle"><h2>Contact Me ৻( •̀ ᗜ •́ ৻)</h2></label>
+       <p class="hidden">Feel free to contact me and visit my Instagram:</p>
+       <p class="hidden"><a href="https://www.instagram.com/malp.y_y" class="instagram-link">@malp.y_y</a></p>
+   <p class="hidden"><a href="https://www.instagram.com/mela.y_y" class="instagram-link">@mela.y_y</a></p>
+</section>
+    </section>
+ </div>
+
+<footer>
+    <p>&copy; 2024 My Website is the coolest ദ്ദി(˵ •̀ ᴗ - ˵ ) ✧</p>
+  </footer>
+
+
+
+
+   </body>
+</html>
